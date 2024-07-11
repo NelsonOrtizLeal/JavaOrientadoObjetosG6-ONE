@@ -1,3 +1,5 @@
+package Leccion1;
+
 import java.util.Scanner;
 
 public class Evaluaciones {

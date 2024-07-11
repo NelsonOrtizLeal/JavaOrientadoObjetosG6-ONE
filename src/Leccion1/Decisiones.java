@@ -1,3 +1,5 @@
+package Leccion1;
+
 public class Decisiones {
     public static void main(String[] args) {
         //Información de una pelicula
