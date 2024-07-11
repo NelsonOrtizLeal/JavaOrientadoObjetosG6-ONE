@@ -7,17 +7,19 @@ public class Principal {
         miPelicula.duracionEnMinuto = 120;
         miPelicula.incluidoEnElPlan = true;
 
-        System.out.println("Mi pelicula es: " + miPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + miPelicula.fechaDeLanzamiento);
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(10);
+        miPelicula.evalua(10);
+        miPelicula.evalua(9);
+
+        System.out.printf("Suma total de evaluaciones: %.2f \n",miPelicula.sumaDeLasEvaluaciones);
+        System.out.printf("Total de las evaluaciones: #%d \n", miPelicula.totalDeLasEvaluaciones);
+        System.out.printf("La media es: %.2f \n" ,miPelicula.calculaMedia());
 
         Pelicula otraPelicula = new Pelicula();
-
         otraPelicula.nombre = "Encanto";
         otraPelicula.fechaDeLanzamiento = 2021;
         otraPelicula.duracionEnMinuto = 120;
         otraPelicula.incluidoEnElPlan = true;
-
-        System.out.println("Mi pelicula es: " + otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
     }
 }
