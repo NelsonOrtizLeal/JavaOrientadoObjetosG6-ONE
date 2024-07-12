@@ -12,8 +12,7 @@ public class Principal {
         miPelicula.evalua(10);
         miPelicula.evalua(9);
 
-        System.out.printf("Suma total de evaluaciones: %.2f \n",miPelicula.sumaDeLasEvaluaciones);
-        System.out.printf("Total de las evaluaciones: #%d \n", miPelicula.totalDeLasEvaluaciones);
+        System.out.printf("Total de las evaluaciones: #%d \n", miPelicula.getTotalDeLasEvaluaciones());
         System.out.printf("La media es: %.2f \n" ,miPelicula.calculaMedia());
 
         Pelicula otraPelicula = new Pelicula();
