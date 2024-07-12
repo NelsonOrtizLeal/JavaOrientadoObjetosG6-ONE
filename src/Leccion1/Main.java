@@ -5,7 +5,7 @@ public class
 Main {
     public static void main(String[] args) {
         System.out.println("Bienvenido(a) a Screen Match");
-        System.out.println("Pelicula: Matrix");
+        System.out.println("com.aluracursos.screenmatch.modelos.Pelicula: Matrix");
 
         int fechaDeLanzamiento = 1999;
         boolean incluidaEnElPlan = true;
