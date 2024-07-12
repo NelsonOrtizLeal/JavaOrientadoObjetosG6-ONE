@@ -4,10 +4,10 @@ public class Principal {
     public static void main(String[] args) {
         Pelicula miPelicula = new Pelicula();
 
-        miPelicula.nombre = "The Matrix";
-        miPelicula.fechaDeLanzamiento = 1999;
-        miPelicula.duracionEnMinuto = 120;
-        miPelicula.incluidoEnElPlan = true;
+        miPelicula.setNombre("The Matrix");
+        miPelicula.setFechaDeLanzamiento(1999);
+        miPelicula.setDuracionEnMinuto(120);
+        miPelicula.setIncluidoEnElPlan(true);
 
         miPelicula.muestraFichaTecnica();
         miPelicula.evalua(10);
