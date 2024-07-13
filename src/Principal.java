@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -18,6 +19,14 @@ public class Principal {
         System.out.printf("Total de las evaluaciones: #%d \n", miPelicula.getTotalDeLasEvaluaciones());
         System.out.printf("La media es: %.2f \n" ,miPelicula.calculaMedia());
 
+        // Agregando otra pelicula
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Encanto");
+        otraPelicula.setFechaDeLanzamiento(2022);
+        otraPelicula.setDuracionEnMinuto(180);
+
+        otraPelicula.muestraFichaTecnica();
+
         System.out.println("***********************************");
 
         // Agregando una serie
@@ -30,6 +39,15 @@ public class Principal {
 
         casaDragon.muestraFichaTecnica();
         // Quiero saber cuanto tiempo me tomara terminar toda la serie
-        System.out.printf("Terminar la serie te tomara: %d minutos", casaDragon.getDuracionEnMinuto());
+        System.out.printf("Terminar la serie te tomara: %d minutos\n", casaDragon.getDuracionEnMinuto());
+
+        System.out.println("***********************************");
+
+        // Utilizando la clase para calcular el tiempo
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(miPelicula);
+        calculadora.incluye(casaDragon);
+        calculadora.incluye(otraPelicula);
+        System.out.printf("Tiempo necesario para ver tus titulos favoritos: %d", calculadora.getTiempoTotal());
     }
 }
