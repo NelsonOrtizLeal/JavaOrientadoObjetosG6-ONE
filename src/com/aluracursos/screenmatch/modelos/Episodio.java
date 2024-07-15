@@ -6,7 +6,7 @@ public class Episodio implements Clasificable {
     private int numero;
     private String nombre;
     private Serie serie;
-    private int totalReprducciones;
+    private int totalvisualizaciones;
 
     public String getNombre() {
         return nombre;
@@ -32,9 +32,13 @@ public class Episodio implements Clasificable {
         this.numero = numero;
     }
 
+    public void setTotalvisualizaciones(int totalvisualizaciones){
+        this.totalvisualizaciones = totalvisualizaciones;
+    }
+
     @Override
     public int getClasificacion() {
-        if(totalReprducciones > 100){
+        if(totalvisualizaciones > 100){
             return 5;
         }else{
             return 2;
