@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula();
+        Pelicula miPelicula = new Pelicula("The Matrix");
 
         miPelicula.setNombre("The Matrix");
         miPelicula.setFechaDeLanzamiento(1999);
@@ -24,8 +24,7 @@ public class Principal {
         System.out.printf("La media es: %.2f \n" ,miPelicula.calculaMedia());
 
         // Agregando otra pelicula
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Encanto");
+        Pelicula otraPelicula = new Pelicula("Encanto");
         otraPelicula.setFechaDeLanzamiento(2022);
         otraPelicula.setDuracionEnMinuto(180);
 
@@ -52,7 +51,7 @@ public class Principal {
         calculadora.incluye(miPelicula);
         calculadora.incluye(casaDragon);
         calculadora.incluye(otraPelicula);
-        System.out.printf("Tiempo necesario para ver tus titulos favoritos: %d", calculadora.getTiempoTotal());
+        System.out.printf("Tiempo necesario para ver tus titulos favoritos: %d \n", calculadora.getTiempoTotal());
 
         System.out.println("***********************************");
         // Para mostrar la clasificación de un OBJETO CLASIFICABLE
@@ -72,8 +71,7 @@ public class Principal {
         filtroRecomendacion.filtrar(episodio);
 
         System.out.println("***********************************");
-        var peliculaDeNelson = new Pelicula();
-        peliculaDeNelson.setNombre("El señor de los anillos");
+        var peliculaDeNelson = new Pelicula("El señor de los anillos");
         peliculaDeNelson.setFechaDeLanzamiento(2001);
         peliculaDeNelson.setDuracionEnMinuto(180);
 
