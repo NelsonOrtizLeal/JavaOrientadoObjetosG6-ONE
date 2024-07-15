@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula("The Matrix");
-
-        miPelicula.setNombre("The Matrix");
-        miPelicula.setFechaDeLanzamiento(1999);
+        Pelicula miPelicula = new Pelicula("The Matrix", 1999);
         miPelicula.setDuracionEnMinuto(120);
         miPelicula.setIncluidoEnElPlan(true);
 
@@ -24,8 +21,7 @@ public class Principal {
         System.out.printf("La media es: %.2f \n" ,miPelicula.calculaMedia());
 
         // Agregando otra pelicula
-        Pelicula otraPelicula = new Pelicula("Encanto");
-        otraPelicula.setFechaDeLanzamiento(2022);
+        Pelicula otraPelicula = new Pelicula("Encanto", 2022);
         otraPelicula.setDuracionEnMinuto(180);
 
         otraPelicula.muestraFichaTecnica();
@@ -33,9 +29,7 @@ public class Principal {
         System.out.println("***********************************");
 
         // Agregando una serie
-        Serie casaDragon = new Serie();
-        casaDragon.setNombre("La casa del dragon");
-        casaDragon.setFechaDeLanzamiento(2022);
+        Serie casaDragon = new Serie("La casa del dragon",2022);
         casaDragon.setTemporadas(1);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
@@ -71,8 +65,7 @@ public class Principal {
         filtroRecomendacion.filtrar(episodio);
 
         System.out.println("***********************************");
-        var peliculaDeNelson = new Pelicula("El señor de los anillos");
-        peliculaDeNelson.setFechaDeLanzamiento(2001);
+        var peliculaDeNelson = new Pelicula("El señor de los anillos",2001);
         peliculaDeNelson.setDuracionEnMinuto(180);
 
         // Manipulando ArrayList
